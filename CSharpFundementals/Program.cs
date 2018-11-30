@@ -10,10 +10,18 @@ namespace CSharpFundementals
         {
             Console.WriteLine(Calculator.Add(4,5));
 
-            var person = new Person();
-            person.FirstName = "Rick";
-            person.LastName = "Grimes";
+            var person = new Person
+            {
+                FirstName = "Rick",
+                LastName = "Grimes"
+            };
             person.Introduce();
+
+            var method = ShippingMethod.Express;
+            Console.WriteLine((int)method);
+
+            var methodID = 3;
+            Console.WriteLine((ShippingMethod)methodID);
         }
     }
 }

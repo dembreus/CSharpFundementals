@@ -9,7 +9,8 @@ namespace CSharpFundementals
 
         public void Introduce()
         {
-            Console.WriteLine("Hello, my name is " + FirstName + " " + LastName);
+            var introduction = string.Format("Hello, my name is {0} {1}", FirstName, LastName);
+            Console.WriteLine(introduction);
         }
     }
 }
